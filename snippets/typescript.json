@@ -1,4 +1,13 @@
 {
+    "Promise with function": {
+        "prefix": "promisef",
+        "body": [
+            "new Promise(function (resolve, reject) {",
+            "    ${1: }",
+            "});"
+        ],
+        "description": "Promise with function"
+    },
     "Promise": {
         "prefix": "promise",
         "body": [
@@ -7,5 +16,80 @@
             "});"
         ],
         "description": "Promise"
+    },
+    "Promise with then catch": {
+        "prefix": "promisetc",
+        "body": [
+            "new Promise((resolve, reject) => {",
+            "   ",
+            "})",
+            ".then((result: any) => {",
+            "   ",
+            "})",
+            ".catch((error: Error | any) => {",
+            "   ",
+            "});"
+        ],
+        "description": "Promise with then catch"
+    },
+    "Promise const": {
+        "prefix": "promisec",
+        "body": [
+            "const ${1:promise} = new Promise((resolve, reject) => {",
+            "   ",
+            "});",
+            "",
+            "${1:promise}.then((result: any) => {",
+            "   ",
+            "})",
+            ".catch((error: Error | any) => {",
+            "   ",
+            "});"
+        ],
+        "description": "Promise const"
+    },
+    "Promise full": {
+        "prefix": "promisefull",
+        "body": [
+            "new Promise((resolve, reject) => {",
+            "   resolve()",
+            "   reject()",
+            "})",
+            ".then((result: any) => {",
+            "   ",
+            "})",
+            ".catch((error: Error | any) => {",
+            "   ",
+            "});"
+        ],
+        "description": "Promise full"
+    },
+    "Promise async": {
+        "prefix": "promisea",
+        "body": [
+            "async function ${1:promise}(): Promise<any> {",
+            "   try {",
+            "      let result;",
+            "      return result;",
+            "   } catch (error: Error | any) {",
+            "      throw error;",
+            "   }",
+            "}"
+        ],
+        "description": "Promise async"
+    },
+    "Promise async arrow": {
+        "prefix": "promiseaa",
+        "body": [
+            "const ${1:promise} = async (): Promise<any> => {",
+            "   try {",
+            "      let result;",
+            "      return result;",
+            "   } catch (error: Error | any) {",
+            "      throw error;",
+            "   }",
+            "}"
+        ],
+        "description": "Promise async arrow"
     }
 }
