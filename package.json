@@ -1,8 +1,8 @@
 {
-  "name": "promise-snippets",
-  "displayName": "Promise snippets",
+  "name": "promise-snippets-pro-max",
+  "displayName": "Promise snippets pro max",
   "publisher": "JackSheepe",
-  "description": "Simple promise snippets for JavaScript and TypeScript",
+  "description": "Simple promise snippets for JavaScript and TypeScript extended",
   "version": "1.0.0",
   "engines": {
     "vscode": "0.10.x"
